@@ -4,7 +4,7 @@
 
 <html>
   <head>
-    <title>Play Responsive Kamanu</title>
+    <title>Play Responsive Kamanu - @page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
@@ -27,12 +27,12 @@
           <!-- Display three horizontal lines when navbar collapsed. -->
             <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
           </button>
-          <a href="#" class="navbar-brand"><img alt="Brand" src=@routes.Assets.at("images/header-logo.jpg")></a>
+          <a href=@routes.Application.index() class="navbar-brand"><img alt="Brand" src=@routes.Assets.at("images/header-logo.jpg")></a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li><a href="#" class="nav-link">Store</a></li>
-            <li><a href="#" class="nav-link">Pueo</a></li>
+            <li><a href=@routes.Application.pueo() class="nav-link">Pueo</a></li>
             <li><a href="#" class="nav-link">Aukahi</a></li>
             <li><a href="#" class="nav-link">Kamanu V6</a></li>
             <li><a href="#" class="nav-link">Iho</a></li>

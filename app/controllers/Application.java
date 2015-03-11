@@ -3,6 +3,7 @@ package controllers;
 import play.mvc.Controller;
 import play.mvc.Result;
 import views.html.Index;
+import views.html.Pueo;
 
 /**
  * Provides controllers for this application.
@@ -15,5 +16,13 @@ public class Application extends Controller {
    */
   public static Result index() {
     return ok(Index.render("Welcome to the home page."));
+  }
+
+  /**
+   * Returns the Pueo page.
+   * @return The Result of OK from rendering the Pueo page.
+   */
+  public static Result pueo() {
+    return ok(Pueo.render("Pueo"));
   }
 }

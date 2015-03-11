@@ -26,6 +26,8 @@ public class IntegrationTest {
         browser.goTo("http://localhost:3333");
         assertThat(browser.pageSource()).contains("We Build Canoes");
 
+        browser.goTo("http://localhost:3333/pueo");
+        assertThat(browser.pageSource()).contains("Pueo");
       }
     });
   }

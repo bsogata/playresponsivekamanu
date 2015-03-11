@@ -33,5 +33,13 @@ public class ApplicationTest {
     assertThat(contentAsString(html)).contains("We Build Canoes");
   }
 
-
+  /**
+   * Tests that the Pueo template renders correctly.
+   */
+  @Test
+  public void renderPueoTemplate() {
+    Content html = views.html.Index.render("Pueo.");
+    assertThat(contentType(html)).isEqualTo("text/html");
+    assertThat(contentAsString(html)).contains("Pueo");
+  }
 }

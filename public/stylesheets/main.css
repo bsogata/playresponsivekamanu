@@ -58,3 +58,11 @@ h2 {
   font-weight: 700;
   text-shadow: 0px 0px 0px #000;
 }
+
+#pueo-image {
+  background-image: url("../images/cover-pueo-page.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 385px;
+
+}
