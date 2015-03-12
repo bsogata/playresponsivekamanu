@@ -38,8 +38,39 @@ public class ApplicationTest {
    */
   @Test
   public void renderPueoTemplate() {
-    Content html = views.html.Index.render("Pueo.");
+    Content html = views.html.Index.render("Pueo");
     assertThat(contentType(html)).isEqualTo("text/html");
     assertThat(contentAsString(html)).contains("Pueo");
   }
+
+  /**
+   * Tests that the Aukahi template renders correctly.
+   */
+  @Test
+  public void renderAukahiTemplate() {
+    Content html = views.html.Aukahi.render("Aukahi");
+    assertThat(contentType(html)).isEqualTo("text/html");
+    assertThat(contentAsString(html)).contains("Aukahi");
+  }
+
+  /**
+   * Tests that the Kamanu V6 template renders correctly.
+   */
+  @Test
+  public void renderKamanuV6Template() {
+    Content html = views.html.KamanuV6.render("Kamanu V6");
+    assertThat(contentType(html)).isEqualTo("text/html");
+    assertThat(contentAsString(html)).contains("Kamanu V6");
+  }
+
+  /**
+   * Tests that the About template renders correctly.
+   */
+  @Test
+  public void renderAboutTemplate() {
+    Content html = views.html.About.render("About");
+    assertThat(contentType(html)).isEqualTo("text/html");
+    assertThat(contentAsString(html)).contains("About");
+  }
+
 }

@@ -28,6 +28,15 @@ public class IntegrationTest {
 
         browser.goTo("http://localhost:3333/pueo");
         assertThat(browser.pageSource()).contains("Pueo");
+
+        browser.goTo("http://localhost:3333/aukahi");
+        assertThat(browser.pageSource()).contains("Aukahi");
+
+        browser.goTo("http://localhost:3333/kamanu-v6");
+        assertThat(browser.pageSource()).contains("Kamanu V6");
+
+        browser.goTo("http://localhost:3333/about");
+        assertThat(browser.pageSource()).contains("About");
       }
     });
   }
